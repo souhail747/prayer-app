@@ -1,0 +1,38 @@
+.prayer{
+    width: 455px;
+height: 480px;
+background-color:rgba(163, 65, 46, 0.486); /* 0.7 = 70% opacity */
+border-radius: 5%;
+padding: 35px;
+}
+.text{
+    color:white;
+      font-weight: bold;
+
+}
+
+section .topsec{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 3px solid rgba(207, 198, 197, 0.486);
+}
+.date{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+}
+.salat{
+   display: flex;
+  justify-content: space-between;
+    height: fit-content;
+    align-items: center;
+  padding: 5px 25px;
+  background: #c0583e75;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+margin-top: 15px;
+}

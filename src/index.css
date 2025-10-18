@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.footer-text {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+

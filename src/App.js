@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import zit from './components/zit.JPG'; 
+import PrayerList from './components/PrayerList';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="App d-flex   p-5 align-items-center"
+      style={{
+        width: '100vw',
+        height: '100vh',
+        backgroundImage: `url(${zit})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className='Mycontainer'>
+
+
+      <PrayerList/>
+<div class="footer-text">All rights reserved to Souhail ©</div>
+
+      </div>
     </div>
   );
 }

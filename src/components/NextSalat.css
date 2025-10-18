@@ -1,0 +1,60 @@
+.Nextcontainer {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prayerBox {
+  border-radius: 22px;
+  background: rgba(163, 65, 46, 0.486);
+  width: 500px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Nextcontainer .prayerBox p {
+  padding-top: 8px;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  margin: 15px;
+}
+.boxContainer {
+  width: 50%;
+
+  height: 155px;
+  font-weight: bold;
+  font-size: 22px;
+  color: white ;
+  border-radius: 22px;
+  background-color: #bc6b2563;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Nextcontainer .prayerBox .boxContainer div {
+  font-size: 22px;
+  padding: 10px;
+}
+.timer {
+  font-size: 55px;
+  padding: 10px;
+  color: rgb(235, 219, 219) ;
+    font-weight: bold;
+  font-size: 62px;
+
+}
+.title {
+  font-size: 28px !important;
+  padding-bottom: 10px !important;
+  font-family: "Cairo", sans-serif;
+}
