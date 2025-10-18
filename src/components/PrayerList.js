@@ -33,7 +33,6 @@ function PrayerList() {
     { name: "القيروان", value: "Kairouan" },
   ];
 
-  // Fetch prayer times
   useEffect(() => {
     const fetchAdhan = async () => {
       try {
@@ -49,10 +48,8 @@ function PrayerList() {
     fetchAdhan();
   }, [city]);
 
-  // Memoize t to prevent useEffect warning
   const t = useMemo(() => adhanlist?.data?.timings || {}, [adhanlist]);
 
-  // Determine next prayer
   useEffect(() => {
     if (!t.Fajr) return;
 
@@ -73,11 +70,10 @@ function PrayerList() {
 
     const now = new Date();
     let next = prayers.find((p) => toDate(p.time) > now);
-    if (!next) next = prayers[0]; // next day Fajr
+    if (!next) next = prayers[0]; 
     setNextPrayer(next);
   }, [t]);
 
-  // Countdown timer
   useEffect(() => {
     if (!nextPrayer) return;
 
@@ -88,7 +84,7 @@ function PrayerList() {
       next.setHours(h, m, 0, 0);
 
       let diff = (next - now) / 1000;
-      if (diff < 0) diff += 24 * 3600; // handle next day
+      if (diff < 0) diff += 24 * 3600; 
 
       const hours = Math.floor(diff / 3600);
       const minutes = Math.floor((diff % 3600) / 60);
